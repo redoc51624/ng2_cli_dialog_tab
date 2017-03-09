@@ -1,0 +1,74 @@
+body{
+    font-family: 'SapientSansRegular';
+}
+
+/************** HEADER ******************/
+.header{
+    /*background-color: whitesmoke;*/
+    height:99px;    
+}
+
+.header-content{    
+    padding-top:31px;    
+    /*margin: 0 auto;*/
+}
+
+.logo{
+    height:39px;
+}
+
+.myprofile{
+    float:right;    
+    height:39px;     
+}
+
+.profile-pic{
+    width:30px;
+    background-color: grey;
+    border-radius: 50%;
+    border: none;
+    height: 80%;
+    vertical-align: middle;    
+}
+
+.username{   
+    display: inline-block;
+    padding-top:9px;
+    font-family: 'SapientSansRegular';
+    font-size:11px;
+    /**************** text wrapping*/
+    
+}
+
+/******** schedule ************/
+.schedule{
+   background-color: #21addd;
+   font-size: 20px;
+   height:46px;
+   color:white;
+}
+
+.schedule-title{
+    margin:0px 0px 0px 14%;
+    padding:10px;
+    font-family: 'SapientSansRegular';
+    font-size: 21px;
+}
+
+/******************NAVIGATION SECTION ***************/
+
+.navigation-section{
+    margin-top: 20px;
+    background-color: white;    
+}
+
+.mat-tab-link{
+    min-width:0;
+    font-weight:bold;
+    height: 40px;
+    text-decoration: none;
+    font-family: 'SapientSansMedium';
+    font-size: 11px;
+}
+
+

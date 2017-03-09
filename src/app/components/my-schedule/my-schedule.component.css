@@ -1,0 +1,49 @@
+.event-header{
+    margin:0px;
+    background-color: whitesmoke;
+    /*padding: 20px 0px;*/
+    /*height:60px;*/
+}
+.task-list{
+    padding:15px;
+    border-bottom:1px solid silver;
+}
+.header-title{
+    padding:25px;
+    margin:0;
+    font-size: 20px;
+    border-bottom:1px solid silver;
+}
+
+.timing-venue{
+    font-size:12px;
+    margin: 0px;
+}
+.task-title{
+    margin:0px;
+}
+
+.button-and-text{
+    font-family:'SapientSansRegular';
+    text-align: center;
+    font-size:14px;
+}
+
+.browse{
+margin-top:10px
+}
+
+.schedule-container{
+    overflow: scroll;
+    height:350px;
+    font-family: 'SapientSansRegular';
+}
+::-webkit-scrollbar{
+   display: none;
+}
+
+.top-scroll-button{
+font-size: 20px;
+float:right;
+/*display: none;*/
+}

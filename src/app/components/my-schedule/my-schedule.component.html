@@ -1,0 +1,36 @@
+
+<!--<div class="schedule-container container">
+  <div  *ngFor="let i of data" >
+   <div class="row">
+    <div class="event-header col-xs-12" >
+      <p class="header-title">{{i.date | date:'MMMM d yyyy'}}</p>
+    </div>
+   </div>
+    <div  class="task-list col-xs-12" *ngFor="let task of i.taskArray">
+          <p class="task-title"> {{task.task}} </p>
+          <p class="timing-venue">{{task.startTime | uppercase}} to {{task.endTime  | uppercase}}<p>   
+      </div>
+   </div>
+</div>
+<div class="button-and-text">ADD SESSIONS <br>  
+<button md-raised-button color="primary" class="browse">BROWSE SESSIONS</button>
+</div>-->
+
+<div class="container">
+  <div  class="row schedule-container ">
+    <div  *ngFor="let i of data" class="col-xs-12">
+      <div class="event-header" >
+       <p class="header-title">{{i.date | date:'MMMM d yyyy'}}</p>
+      </div>
+      <div class="task-list" *ngFor="let task of i.taskArray">
+          <p class="task-title"> {{task.task}} </p>
+          <p class="timing-venue">{{task.startTime | uppercase}} to {{task.endTime  | uppercase}}</p>   
+      </div>
+    </div>
+    <button  class="top-scroll-button" md-fab color="primary"><i class="fa fa-arrow-up"></i></button>
+  </div>
+   
+  <div class=" row button-and-text">ADD SESSIONS <br>  
+    <button md-raised-button color="primary" class="browse">BROWSE SESSIONS</button>
+  </div>
+</div>
