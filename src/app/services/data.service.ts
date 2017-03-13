@@ -20,7 +20,5 @@ export class DataService{
          return this.http.get(this.url)
          .toPromise();
      }
-    
 
-   
 }

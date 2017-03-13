@@ -1,10 +1,12 @@
-<div class="container">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="container col-xs-12 col-md-12">
     <div class="content">
         <table class="mdl-data-table full-width" style='width:100%'>
             <thead>
 
             </thead>
-            <tr class="child-row" *ngFor="let result of results" (click)="openChildDialog()">
+            <tr class="child-row" *ngFor="let result of results" (click)="openSessionDetail()">
 
                 <td>
                     <tr>{{result.start_time}}</tr>

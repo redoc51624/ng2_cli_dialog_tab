@@ -5,6 +5,7 @@ import {MyScheduleComponent} from '../components/my-schedule/my-schedule.compone
 import { NotFoundComponent } from '../components/not-found/not-found.component';
 import {MyPassComponent} from '../components/my-pass/my-pass.component';
 import { SessionListComponent } from '../components/session-list/session-list.component';
+import { SessionDetailsComponent } from '../components/session-details/session-details.component';
 const appRoutes: Routes = [
     {
         path: 'agenda',
@@ -35,6 +36,11 @@ const appRoutes: Routes = [
     //     redirectTo: '/agenda',
     //     pathMatch: 'full'
     // },
+
+    {
+        path: 'session-details',
+        component: SessionDetailsComponent
+    },
     {
         path: '**',
         component: NotFoundComponent

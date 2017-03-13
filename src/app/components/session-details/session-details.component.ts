@@ -1,7 +1,9 @@
-import { Component,Injectable } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Http , Response } from '@angular/http';
 import { MdDialog } from '@angular/material';
 import { RateSessionComponent }  from '../rate-session/rate-session.component';
+import { SessionDetails } from '../../services/session-details/session-details.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'pd-session-details',
@@ -10,16 +12,22 @@ import { RateSessionComponent }  from '../rate-session/rate-session.component';
 })
 export class SessionDetailsComponent {
 
-    results: Object;
-    constructor(http: Http, private dialog: MdDialog) {
-      this.results = [];
-      http.get('https://api.myjson.com/bins/pbbt5').map((res: Response) => res.json())
-      .subscribe(res => this.results = res);
-    }
+    constructor(private SessionDetails: SessionDetails, private dialog: MdDialog, private router: Router){ }
+     results = [];
 
-  openRateDialog() {
+      ngOnInit() {
+
+    this.SessionDetails.fetchData().subscribe(data => this.results = data);
+
+};
+      openRateDialog() {
    this.dialog.open(RateSessionComponent);
+  };
+  backTolist(){
+     document.getElementById("navigation-bar").style.display = "block";
+     this.router.navigate(['./day1']);
   }
 
 }
+
 

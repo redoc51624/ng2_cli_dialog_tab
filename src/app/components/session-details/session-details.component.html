@@ -1,10 +1,13 @@
-<div class="container">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="container col-xs-12 col-md-12">
     <div class="content">
-        <iframe src="https://www.youtube.com/embed/9hDKfBKuXjI" frameborder="0" allowfullscreen></iframe>
+        <h3>Session Deatails
+
+            <button md-button class="back-button" (click)="backTolist()"><i class="material-icons">&#xE317;</i></button></h3>
+
+        <!--<iframe width="854" height="480" src="https://www.youtube.com/embed/9hDKfBKuXjI" frameborder="0" allowfullscreen></iframe>-->
         <table>
-            <thead>
-                <th>USER DETAILS</th>
-            </thead>
             <tbody class="child-table">
 
                 <tr class="child-row" *ngFor="let result of results">
@@ -26,7 +29,6 @@
         </div>
 
         <button md-button class="rate-session" (click)="openRateDialog()"> RATE SESSION</button>
-
 
         <!--container about speakers-->
         <div class="speakers-details">

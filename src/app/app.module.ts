@@ -9,6 +9,8 @@ import { GanttChart } from 'angular-gantt-chart';
 import { AppRoutingModule } from './routing/app-routing.module';
 
 import { DataService } from './services/data.service';
+import { SessionDetails } from './services/session-details/session-details.service';
+import { RateSession } from './services/rate-session/rate-session.service';
 
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
@@ -35,7 +37,7 @@ import {MyPassComponent} from './components/my-pass/my-pass.component';
     AppRoutingModule,
     GanttChart
   ],
-  providers: [DataService],
+  providers: [DataService,SessionDetails,RateSession],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
